@@ -1,6 +1,9 @@
 #!/bin/bash
 # chkconfig: 234 20 80
 # description: Kafka basic start/shutdown script
+#
+# @author Cameron Gregory, http://www.bloke.com/
+
 
 JAVA_HOME=/usr/java/default
 export JAVA_HOME
