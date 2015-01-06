@@ -34,7 +34,7 @@ start() {
   		#ulimit -s 10240
   		#ulimit -c unlimited
 		cd $KAFKA_HOME
-		su ${KAFKA_USER} -c "./bin/kafka-server-start.sh ./config/server.properties" >> /www/logs/kafka.log 2>&1 &
+		su ${KAFKA_USER} -c "./bin/kafka-server-start.sh ./config/server.properties" >> /var/log/kafka.log 2>&1 &
 		echo "done."
 	fi
 	return 0;
