@@ -24,7 +24,7 @@ if [ -r "/etc/sysconfig/${NAME}" ]; then
 fi
 
 kafka_pid() {
-echo `ps aux | grep ".jar kafka.Kafka ./config/server.properties"  | grep -v grep | awk '{ print $2 }'`
+echo `ps aux | grep " kafka.Kafka ./config/server.properties"  | grep -v grep | awk '{ print $2 }'`
 }
  
 start() {
