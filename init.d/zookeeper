@@ -23,7 +23,7 @@ if [ -r "/etc/sysconfig/${NAME}" ]; then
 fi
 
 zookeeper_pid() {
-echo `ps aux | grep ".jar org.apache.zookeeper.server.quorum.QuorumPeerMain ./config/zookeeper.properties" | grep -v grep | awk '{ print $2 }'`
+echo `ps aux | grep " org.apache.zookeeper.server.quorum.QuorumPeerMain ./config/zookeeper.properties" | grep -v grep | awk '{ print $2 }'`
 }
  
 start() {
